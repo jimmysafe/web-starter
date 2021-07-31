@@ -31,10 +31,13 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'react/require-default-props': 'off',
         'prettier/prettier': [
-            'error',
+            'off',
 
             {
                 endOfLine: 'auto',
+                singleQuote: true,
+                trailingComma: "all",
+                tabWidth: 4,
             },
         ],
         '@typescript-eslint/no-non-null-assertion': 'off',
