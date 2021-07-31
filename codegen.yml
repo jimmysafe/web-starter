@@ -1,5 +1,5 @@
 overwrite: true
-schema: 'https://testapi.uplevyl.com/graphql'
+schema: 'https://api.mocki.io/v2/c4d7a195/graphql'
 documents: 'src/**/*.graphql'
 generates:
     src/generated/graphql.tsx:
@@ -13,4 +13,4 @@ generates:
             withHOC: false
             withComponent: false
             withMutationFn: true
-            urqlImportFrom: 'src/generated/graphql.tsx'
+            urqlImportFrom: 'urql'
