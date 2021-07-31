@@ -21,7 +21,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"Porcodiooooo\""
+      "pre-commit": "echo \"PORCODIO----------\""
     }
   },
   "eslintConfig": {
