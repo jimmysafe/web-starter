@@ -1,17 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "urql";
-import App from "./App";
-import "./styles/index.css";
-import { UrqlClient } from "./urql.client";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import App from './App';
+import './styles/index.css';
 
-const client = new UrqlClient();
+const client = new ApolloClient({
+    uri: process.env.REACT_APP_API_URL,
+    cache: new InMemoryCache(),
+});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider value={client.urqlClient}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <ApolloProvider client={client}>
+            <App />
+        </ApolloProvider>
+    </React.StrictMode>,
+    document.getElementById('root'),
 );

@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.4.16",
     "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "graphql": "^15.5.1",
+    "graphql": "^15.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "urql": "^2.0.4",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -48,8 +48,8 @@
     "@graphql-codegen/cli": "^1.21.8",
     "@graphql-codegen/typescript": "^1.23.0",
     "@graphql-codegen/typescript-operations": "^1.18.4",
+    "@graphql-codegen/typescript-react-apollo": "^3.1.4",
     "@graphql-codegen/typescript-resolvers": "^1.20.0",
-    "@graphql-codegen/typescript-urql": "^2.0.11",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "autoprefixer": "^9",

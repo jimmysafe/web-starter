@@ -6,11 +6,11 @@ generates:
         plugins:
             - 'typescript'
             - 'typescript-operations'
-            - 'typescript-urql'
+            - 'typescript-react-apollo'
         config:
             skipTypename: false
             withHooks: true
             withHOC: false
             withComponent: false
             withMutationFn: true
-            urqlImportFrom: 'urql'
+            reactApolloVersion: 3

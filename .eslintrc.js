@@ -31,8 +31,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "react/require-default-props": "off",
     "prettier/prettier": [
-      "off",
-
+      "error",
       {
         endOfLine: "auto",
         singleQuote: true,
